@@ -12,9 +12,9 @@ const mode = ref('book') // 'edit' or 'book'
     <header class="bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between shadow-sm z-20">
       <div class="flex items-center gap-2">
         <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">
-          O
+          D
         </div>
-        <h1 class="text-lg font-bold tracking-tight">OfficeMap</h1>
+        <h1 class="text-lg font-bold tracking-tight">Degestec</h1>
       </div>
       
       <div class="flex bg-gray-100 p-1 rounded-lg">
@@ -23,14 +23,14 @@ const mode = ref('book') // 'edit' or 'book'
           class="px-4 py-1.5 rounded-md text-sm font-medium transition-all"
           :class="mode === 'book' ? 'bg-white text-indigo-600 shadow-sm' : 'text-gray-500 hover:text-gray-700'"
         >
-          Book Desk
+          Reservar
         </button>
         <button 
           @click="mode = 'edit'"
           class="px-4 py-1.5 rounded-md text-sm font-medium transition-all"
           :class="mode === 'edit' ? 'bg-white text-indigo-600 shadow-sm' : 'text-gray-500 hover:text-gray-700'"
         >
-          Edit Layout
+          Editar Mapa
         </button>
       </div>
       
